@@ -39,5 +39,13 @@ export const blogs: Blog[] = [
         link: "https://phanee.hashnode.dev/linux-system-administrators",
         date_created: "2022-06-29",
         date_modified: "2022-06-29",
-    }
+    },
+    {
+        id: 5,
+        name: "Word Embeddings Part - 1",
+        description: "Word Embeddings Part - 1",
+        link: "https://phanee.hashnode.dev/word-embeddings-part-1",
+        date_created: "2025-04-03",
+        date_modified: "2025-04-03",
+    },
 ];
