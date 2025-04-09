@@ -194,9 +194,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     <div className="bg-black text-white p-3 rounded-t-lg flex items-center justify-between">
                         <div className="flex items-center">
                             <FaRobot className="mr-2" />
-                            <h3 className="font-semibold">Phanee AI</h3>
+                            <h3 className="font-semibold">Phanee's AI</h3>
                         </div>
-                        {/* Fixed close button with better styling */}
                         <button
                             onMouseDown={handleButtonClick}
                             className="chat-close-btn text-white hover:text-gray-300"

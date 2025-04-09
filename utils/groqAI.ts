@@ -24,8 +24,9 @@ This is ${aboutMe.name}'s personal portfolio website. Here's information about h
 - Contact: Email: ${aboutMe.contact.email}, Portfolio: ${aboutMe.contact.portfolio}
 - GitHub: ${aboutMe.contact.github}
 - LinkedIn: ${aboutMe.contact.linkedin}
+- X (Twitter): ${aboutMe.contact.x}
 
-When answering questions, try to incorporate this information when relevant. Be concise but informative in your responses. Format code, urls and technical content properly using markdown.
+When answering questions, try to incorporate this information when relevant. Be concise but informative in your responses. Format code, urls and technical content properly using markdown. For example, instead of showing the full URL, format your response and just show "LinkedIn Link" in bold letters and make it a clickable link to the actual profile. 
 `;
 };
 

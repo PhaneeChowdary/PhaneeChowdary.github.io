@@ -20,6 +20,7 @@ export type AboutMeData = {
   achievements: string[];
   interests: string[];
   contact: {
+    x: string;
     email: string;
     linkedin: string;
     github: string;
@@ -89,8 +90,9 @@ export const aboutMe: AboutMeData = {
     },
   ],
   achievements: ["Attained a global rank of 1770 in TCS CodeVita season 10, TCS.", "Certified as an outstanding intern in Machine Learning, Verzeo.", "Secured a rank of 4696 in Google Kickstart Round G 2022, Google."],
-  interests: ["Cricket", "Chess", "Reading", "Traveling", "Mentoring", "Coding", "Research", "Blog Writing"],
+  interests: ["Cricket", "Chess", "Reading", "Traveling", "Mentoring", "Coding", "Research", "Blog Writing", "Space & Galaxies", "Spirituality"],
   contact: {
+    x: "https://x.com/phaneestwt",
     email: "phaneegunturu@gmail.com",
     linkedin: "https://www.linkedin.com/in/gunturuphanee/",
     github: "https://github.com/PhaneeChowdary",
