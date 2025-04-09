@@ -1,12 +1,16 @@
-# Phaneendra Babu Gunturu - Portfolio Website
+# Portfolio Website
 
-![Portfolio Screenshot](/public/Screenshot.png)
+![Portfolio Screenshot](/public/Homepage.jpeg)
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and professional journey. Built with **Next.js**, **Tailwind CSS**, and **TypeScript**, it’s a modern, responsive, and performant representation of my work.
+Live website: [Portfolio Website](https://phaneechowdary.github.io/)  
+Welcome to my personal portfolio website! This project highlights my skills, projects, and professional journey as a developer.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Frontend**: Next.js, React, Tailwind CSS
 - **Type Checking**: TypeScript
 - **Deployment**: GitHub Pages
-- **Version Control**: Git & GitHub
+
+## Contact
+
+Feel free to reach out via [email](mailto:phaneegunturu@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/gunturuphanee/).
