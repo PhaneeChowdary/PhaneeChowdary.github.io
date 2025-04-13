@@ -167,9 +167,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     aria-label={chatVisible ? "Close chat" : "Open chat"}
                 >
                     {chatVisible ? (
-                        <FaTimes size={18} />
+                        <FaTimes size={25} />
                     ) : (
-                        <FaRobot size={18} />
+                        <FaRobot size={25} />
                     )}
                 </button>
             </div>
