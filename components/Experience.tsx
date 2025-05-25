@@ -5,8 +5,8 @@ const Experience = () => {
         {
             title: "Deep Learning Researcher",
             company: "UbiEi Lab, Indiana University",
-            period: "Nov 2024",
-            present: true,
+            period: "Aug 2024 - May 2025",
+            present: false,
         },
         {
             title: "Mathematics tutor",

@@ -6,21 +6,30 @@ import Head from "next/head";
 
 const About = () => {
     return (
-        <section id="about" className="my-10">
+        <section id="about" className="my-10 relative">
             <Head>
                 <title>Phaneendra Babu Gunturu</title>
             </Head>
-            <p className="text-lg text-gray-600">
-                I'm a Computer Science Master's student at Indiana University -
-                Purdue University Indianapolis (IUPUI), passionate about Deep Learning, Web
-                Development, and Coding. With a knack for creating intuitive websites, exploring data's hidden
-                stories, and writing elegant code, I'm on a mission to blend
-                technology with creativity. Let's connect and collaborate to
-                make difference in the digital world!
+            <p className="text-lg text-gray-600 relative z-10">
+                I'm a passionate{" "}
+                <strong style={{ color: "black" }}>Computer Science</strong>{" "}
+                graduate student at{" "}
+                <strong style={{ color: "black" }}>
+                    <a href="https://www.purdue.edu">Purdue University</a>
+                </strong>{" "}
+                with a strong focus on Artificial Intelligence and Machine
+                Learning. I'm actively seeking opportunities in internships,
+                full-time roles, and research that allow me to innovate at the
+                intersection of deep learning, data science, and real-world
+                impact. I enjoy the challenge of turning complex problems into
+                robust, data-driven solutions. Let's connect I'm always excited
+                to explore opportunities that combine AI with purpose.
             </p>
-            <Experience />
-            <BlogPreview />
-            <Achievements />
+            <div className="relative z-10">
+                <Experience />
+                <BlogPreview />
+                <Achievements />
+            </div>
         </section>
     );
 };
