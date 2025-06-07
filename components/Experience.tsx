@@ -5,7 +5,7 @@ const Experience = () => {
         {
             title: "Research Assistant",
             company: "Indiana University School of Medicine",
-            period: "June 2025 - Present",
+            period: "June 2025",
             present: true,
         },
         {
@@ -29,10 +29,10 @@ const Experience = () => {
         <section id="experience" className="my-10">
             <h2 className="text-xl mb-4 font-semibold">Experience</h2>
             <div className="relative border-gray-500">
-                <div className="border-l absolute h-full"></div>
+                <div className="border-l-2 absolute h-full"></div>
                 {experiences.map((experience, index) => (
                     <div key={index} className="ml-6 mb-8 relative">
-                        <div className="w-2 h-2 bg-gray-500 rounded-full absolute -left-7"></div>
+                        <div className="w-2.5 h-2.5 bg-gray-500 rounded-full absolute -left-7 top-2.5 -translate-y-3/2"></div>
                         <div>
                             <h3 className="text-xl">
                                 {experience.title}{" "}

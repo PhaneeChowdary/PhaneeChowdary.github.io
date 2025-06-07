@@ -98,16 +98,16 @@ const Skills = () => {
                 {skills.map((skillSet, index) => (
                     <div
                         key={index}
-                        className="border p-4 rounded-lg bg-gray-50 transform transition-transform duration-300 hover:-translate-y-1 col-auto"
+                        className="border p-4 rounded-lg transform transition-transform duration-300 hover:-translate-y-1 col-auto"
                     >
-                        <h3 className="text-2xl font-semibold mb-4">
+                        <h3 className="text-xl font-semibold mb-4">
                             {skillSet.category}
                         </h3>
                         <div className="flex flex-wrap space-x-2">
                             {skillSet.items.map((item, i) => (
                                 <span
                                     key={i}
-                                    className="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-full mb-2"
+                                    className="inline-block bg-gray-200 px-2 py-1 rounded-lg mb-2"
                                 >
                                     {item}
                                 </span>

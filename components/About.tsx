@@ -11,10 +11,9 @@ const About = () => {
                 <title>Phaneendra Babu Gunturu</title>
             </Head>
             <p className="text-lg text-gray-600 relative z-10">
-                I'm a passionate{" "}
-                <strong style={{ color: "black" }}>Computer Science</strong>{" "}
-                graduate student at{" "}
-                <strong style={{ color: "black" }}>
+                I'm a passionate <strong>Computer Science</strong> graduate{" "}
+                student at{" "}
+                <strong>
                     <a href="https://www.purdue.edu">Purdue University</a>
                 </strong>{" "}
                 with a strong focus on Artificial Intelligence and Machine
