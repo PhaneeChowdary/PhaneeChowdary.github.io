@@ -11,7 +11,7 @@ import {
 const Header = () => {
     const router = useRouter();
     const { pathname } = router;
-    
+
     // Helper function to handle basePath for GitHub Pages
     const getImagePath = (path: string) => {
         return path;
@@ -23,19 +23,31 @@ const Header = () => {
                 <img
                     src={getImagePath("/Phanee.jpg")}
                     alt="Phaneendra Babu Gunturu"
-                    className="w-20 h-20 rounded-full"
+                    className="w-30 h-40 rounded-full"
                 />
             </Link>
             <h1 className="text-2xl mt-2">Phaneendra Babu Gunturu</h1>
-            <p className="text-gray-600">Deep Learning Researcher</p>
+            <p className="text-gray-600">Machine Learning Research Assistant</p>
             <div className="flex space-x-5 mt-4 text-2xl">
-                <a href="https://github.com/PhaneeChowdary" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://github.com/PhaneeChowdary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a href="https://www.linkedin.com/in/gunturuphanee/" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://www.linkedin.com/in/gunturuphanee/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a href="https://twitter.com/phaneestwt" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://twitter.com/phaneestwt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <FontAwesomeIcon icon={faSquareXTwitter} />
                 </a>
             </div>

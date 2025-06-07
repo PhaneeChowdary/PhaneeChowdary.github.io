@@ -4,60 +4,87 @@ import Head from "next/head";
 const Skills = () => {
     const skills = [
         {
-            category: "Languages",
-            items: [
-                "Python",
-                "R",
-                "C++",
-                "Java",
-                "MySQL",
-                "MongoDB",
-                "Bash",
-                "HTML",
-                "CSS",
-            ],
+            category: "Programming Languages",
+            items: ["Python", "R", "C++", "Java", "SQL", "JavaScript"],
         },
         {
-            category: "Tools",
+            category: "Data Preprocessing & Visualization",
             items: [
                 "Pandas",
                 "NumPy",
-                "Excel",
+                "Data Augmentation",
+                "Data Preprocessing",
                 "Seaborn",
                 "Plotly",
-                "Tableau",
-                "AWS",
-                "Git",
-                "Postman",
+                "Matplotlib",
             ],
         },
         {
-            category: "Frameworks",
+            category: "Machine Learning & Deep Learning",
             items: [
-                "Django",
-                "Flask",
-                "Bootstrap",
-                "React",
-                "OpenCV",
                 "SciKit-Learn",
                 "TensorFlow",
                 "Keras",
                 "PyTorch",
-                "Pandas",
-                "NumPy",
-                "Matplotlib",
-                "Seaborn",
+                "Transformers",
+                "Computer Vision",
+                "MLOps",
+                "MLflow",
             ],
         },
         {
-            category: "Advanced Technologies",
+            category: "AI Ecosystem & Tools",
             items: [
-                "Machine Learning",
-                "Deep Learning",
-                "Natural Language Processing",
-                "LLMs", "Transformers",
-                "Computer Vision",
-                "Fine-tuning",
+                "OpenAI",
+                "Groq",
+                "Hugging Face",
+                "LangChain",
+                "RAG",
+                "Fine Tuning",
+                "LLMs",
+                "Ensemble Learning",
+            ],
+        },
+        {
+            category: "Web Development",
+            items: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Restful APIs",
+                "Django",
+                "Flask",
+                "Bootstrap",
+                "Firebase",
+                "Node.js",
+            ],
+        },
+        {
+            category: "Databases & Cloud",
+            items: [
+                "MongoDB",
+                "MySQL",
+                "PostgreSQL",
+                "AWS",
+                "GCP",
+                "Azure",
+                "Redis",
+            ],
+        },
+        {
+            category: "Other Tools",
+            items: [
+                "Git",
+                "GitHub",
+                "Docker",
+                "Linux",
+                "MacOS",
+                "Windows",
+                "VSCode",
+                "Jupyter",
             ],
         },
     ];
@@ -69,7 +96,10 @@ const Skills = () => {
             </Head>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                 {skills.map((skillSet, index) => (
-                    <div key={index} className="border p-4 rounded-lg bg-white">
+                    <div
+                        key={index}
+                        className="border p-4 rounded-lg bg-gray-50 transform transition-transform duration-300 hover:-translate-y-1 col-auto"
+                    >
                         <h3 className="text-2xl font-semibold mb-4">
                             {skillSet.category}
                         </h3>
@@ -77,7 +107,7 @@ const Skills = () => {
                             {skillSet.items.map((item, i) => (
                                 <span
                                     key={i}
-                                    className="inline-block bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-full mb-2"
+                                    className="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-full mb-2"
                                 >
                                     {item}
                                 </span>

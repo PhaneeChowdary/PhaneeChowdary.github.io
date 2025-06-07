@@ -3,10 +3,15 @@ import React from "react";
 const Experience = () => {
     const experiences = [
         {
+            title: "Research Assistant",
+            company: "Indiana University School of Medicine",
+            period: "June 2025 - Present",
+            present: true,
+        },
+        {
             title: "Deep Learning Researcher",
             company: "UbiEi Lab, Indiana University",
             period: "Aug 2024 - May 2025",
-            present: false,
         },
         {
             title: "Mathematics tutor",
@@ -16,7 +21,7 @@ const Experience = () => {
         {
             title: "Machine Learning Intern",
             company: "Verzeo",
-            period: "Jan 2021 - Dec 2022",
+            period: "June 2021 - Sep 2022",
         },
     ];
 

@@ -8,21 +8,19 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-    // State management
     const [chatVisible, setChatVisible] = useState(false);
     const [input, setInput] = useState("");
     const [conversation, setConversation] = useState<Message[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const [rippleVisible, setRippleVisible] = useState(true);
 
-    // Refs
     const rippleVisibleRef = useRef(true);
     const messagesEndRef = useRef<HTMLDivElement>(null);
     const chatContainerRef = useRef<HTMLDivElement>(null);
 
-    // Set up ripple effect controls
+    // Ripple effect controls
     useEffect(() => {
-        // Show ripple on initial load
+        // Ripple on initial load
         document.body.classList.remove("hide-all-ripples");
         rippleVisibleRef.current = true;
         setRippleVisible(true);
@@ -39,19 +37,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     // Handle chatbot button click
     const handleButtonClick = (e: React.MouseEvent) => {
-        e.stopPropagation(); // Prevent event bubbling
+        e.stopPropagation();
 
-        // Multiple strategies to stop the ripple
         rippleVisibleRef.current = false;
         setRippleVisible(false);
 
-        // Direct DOM manipulation for immediate effect
         const rippleElements = document.querySelectorAll(".ripple-element");
         rippleElements.forEach((el) => {
             (el as HTMLElement).style.display = "none";
         });
 
-        // Force a CSS update to stop animation
         document.body.classList.add("hide-all-ripples");
 
         // Toggle chat visibility
@@ -79,7 +74,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     useEffect(() => {
         const handleResize = () => {
             if (chatContainerRef.current) {
-                const isMobile = window.innerWidth < 640; // sm breakpoint
+                const isMobile = window.innerWidth < 640;
                 if (isMobile) {
                     chatContainerRef.current.style.width = "calc(100% - 2rem)";
                     chatContainerRef.current.style.right = "1rem";

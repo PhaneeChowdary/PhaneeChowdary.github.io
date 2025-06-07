@@ -18,12 +18,9 @@ const About = () => {
                     <a href="https://www.purdue.edu">Purdue University</a>
                 </strong>{" "}
                 with a strong focus on Artificial Intelligence and Machine
-                Learning. I'm actively seeking opportunities in internships,
-                full-time roles, and research that allow me to innovate at the
-                intersection of deep learning, data science, and real-world
-                impact. I enjoy the challenge of turning complex problems into
-                robust, data-driven solutions. Let's connect I'm always excited
-                to explore opportunities that combine AI with purpose.
+                Learning. I enjoy the challenge of turning complex problems into
+                robust, data-driven solutions. I'm always excited to explore
+                opportunities that combine AI with purpose.
             </p>
             <div className="relative z-10">
                 <Experience />

@@ -1,4 +1,3 @@
-// utils/projects.ts
 export interface Project {
     id: number;
     title: string;
@@ -7,7 +6,7 @@ export interface Project {
     link: string;
 }
 
-// Helper function to handle basePath for GitHub Pages
+// Helper function to get image path for GitHub Pages
 const getImagePath = (path: string) => {
     return path;
 };
@@ -23,6 +22,14 @@ export const projects: Project[] = [
     },
     {
         id: 2,
+        title: "Document Classification System",
+        description:
+            "A Vision Transformer model that automatically categorizes mortgage-related documents.",
+        image: getImagePath("/document.png"),
+        link: "https://github.com/PhaneeChowdary/Document-Classification-System",
+    },
+    {
+        id: 3,
         title: "Restaurant Recommendation System",
         description:
             "A full-stack web application for restaurant recommendations with filtering and search capabilities.",
@@ -30,7 +37,7 @@ export const projects: Project[] = [
         link: "https://github.com/PhaneeChowdary/RestaurantsRecommendation",
     },
     {
-        id: 3,
+        id: 4,
         title: "Pubg Player Analysis",
         description:
             "Pubg player analysis and position prediction using Machine Learning",
@@ -38,20 +45,12 @@ export const projects: Project[] = [
         link: "https://github.com/PhaneeChowdary/Pubg",
     },
     {
-        id: 4,
+        id: 5,
         title: "Diabetes Prediction",
         description:
             "Machine Learning model that predicts the onset of diabetes using the set of parameters such as Insulin, BMI, Age etc.",
         image: getImagePath("/diabetes.webp"),
         link: "https://github.com/PhaneeChowdary/Diabetes-Prediction",
-    },
-    {
-        id: 5,
-        title: "Smart Job Application Assistant",
-        description:
-            "An intelligent job application system that scrapes job postings and helps create tailored resumes based on your project portfolio and job requirements.",
-        image: getImagePath("/Job.png"),
-        link: "https://github.com/PhaneeChowdary/SmartJobApplicationAssistant",
     },
     {
         id: 6,
