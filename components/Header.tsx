@@ -6,6 +6,7 @@ import {
     faGithub,
     faLinkedin,
     faSquareXTwitter,
+    faHashnode,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
@@ -49,6 +50,13 @@ const Header = () => {
                     rel="noopener noreferrer"
                 >
                     <FontAwesomeIcon icon={faSquareXTwitter} />
+                </a>
+                <a
+                    href="https://phanee.hashnode.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FontAwesomeIcon icon={faHashnode} />
                 </a>
             </div>
             <hr className="my-6" />

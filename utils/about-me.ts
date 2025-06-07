@@ -31,7 +31,7 @@ export const aboutMe: AboutMeData = {
     name: "Phaneendra Babu Gunturu",
     role: "Deep Learning Researcher",
     education: [
-        "Masters in Computer Science, Indiana University-Purdue University, USA, 2025",
+        "Masters in Computer Science, Purdue University, USA, 2025",
         "Bharath Institute of Higher Education & Research, India, 2023",
     ],
     skills: [
@@ -50,14 +50,14 @@ export const aboutMe: AboutMeData = {
     ],
     experience: [
         {
-            company: "Indiana University-Purdue University Indianapolis, USA",
+            company: "Indiana University Indianapolis, USA",
             role: "Deep Learning Researcher",
             period: "November 2024 - May 2025",
             description:
                 "Conducting NSF-funded research on large-scale medical datasets using deep learning architectures, including Transformers. Developing and optimizing models for improved accuracy and efficiency, leveraging PyTorch and TensorFlow. Collaborating with a multidisciplinary team to design and implement novel solutions for healthcare applications",
         },
         {
-            company: "Indiana University-Purdue University Indianapolis, USA",
+            company: "Indiana University Indianapolis, USA",
             role: "Mathematics Tutor",
             period: "January 2024 - January 2025",
             description:
