@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useStarEffect } from "../context/StarEffectContext";
+import { useStarEffect } from "@/context/StarEffectContext";
 
 const AnimatedStars = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -14,7 +14,6 @@ const AnimatedStars = () => {
         const ctx = canvas.getContext("2d");
         if (!ctx) return;
 
-        // Set canvas size to window size
         const resizeCanvas = () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -22,7 +21,6 @@ const AnimatedStars = () => {
         resizeCanvas();
         window.addEventListener("resize", resizeCanvas);
 
-        // Star class
         class Star {
             x: number;
             y: number;
@@ -36,10 +34,10 @@ const AnimatedStars = () => {
             baseSpeed: number;
 
             constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
+                this.x = Math.random() * canvas!.width;
+                this.y = Math.random() * canvas!.height;
                 this.z = Math.random() * 1500;
-                // Create three distinct size groups for stars
+
                 const sizeGroup = Math.random();
                 if (sizeGroup < 0.6) {
                     this.baseSize = Math.random() * 0.4 + 0.4; // Small stars (60%): 0.3-0.5
@@ -57,14 +55,12 @@ const AnimatedStars = () => {
             }
 
             update() {
-                // Update z position (depth)
                 this.z -= this.speed;
 
-                // Reset star when it gets too close
                 if (this.z <= 1) {
                     this.z = 1500;
-                    this.x = canvas.width + Math.random() * 100;
-                    this.y = Math.random() * canvas.height;
+                    this.x = canvas!.width + Math.random() * 100;
+                    this.y = Math.random() * canvas!.height;
                     this.baseSpeed = Math.random() * 2 + 0.5;
                     this.speed = this.baseSpeed;
                     this.waveOffset = Math.random();
@@ -73,15 +69,11 @@ const AnimatedStars = () => {
                 // Calculate perspective
                 const perspective = 1000;
                 const scale = perspective / (perspective + this.z);
-
-                // Update wave offset
                 this.waveOffset += this.waveSpeed;
 
                 // Calculate new position with wave motion
                 const waveY =
                     Math.sin(this.waveOffset) * this.waveAmplitude * scale;
-
-                // Adjust speed based on perspective to maintain consistent movement
                 this.speed = this.baseSpeed * (1 + (1 - scale));
 
                 this.x -= this.speed;
@@ -89,20 +81,18 @@ const AnimatedStars = () => {
 
                 // Only reset when star is completely off screen
                 if (this.x < -100) {
-                    this.x = canvas.width + Math.random() * 100;
-                    this.y = Math.random() * canvas.height;
+                    this.x = canvas!.width + Math.random() * 100;
+                    this.y = Math.random() * canvas!.height;
                     this.z = Math.random() * 1500;
                 }
-                if (this.y < 0) this.y = canvas.height;
-                if (this.y > canvas.height) this.y = 0;
+                if (this.y < 0) this.y = canvas!.height;
+                if (this.y > canvas!.height) this.y = 0;
             }
 
             draw() {
                 if (!ctx) return;
                 const perspective = 1000;
                 const scale = perspective / (perspective + this.z);
-
-                // Calculate size with perspective
                 const size = this.baseSize * (1 + (1 - scale));
 
                 ctx.beginPath();
@@ -112,7 +102,6 @@ const AnimatedStars = () => {
             }
         }
 
-        // Create stars
         const stars: Star[] = [];
         const starCount = 250;
         for (let i = 0; i < starCount; i++) {
@@ -123,10 +112,7 @@ const AnimatedStars = () => {
         const animate = () => {
             if (!ctx || !canvas || !isStarEffectEnabled) return;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            // Sort stars by z-index for proper depth rendering
             stars.sort((a, b) => b.z - a.z);
-
             stars.forEach((star) => {
                 star.update();
                 star.draw();
