@@ -73,7 +73,7 @@ export const aboutMe: AboutMeData = {
     ],
     projects: [
         {
-            name: "AI-Powered Document Classification System",
+            name: "Document Classification System",
             description:
                 "Architected an enterprise-grade document classification system leveraging Vision Transformers (ViT) and PyTorch, achieving 93.81% accuracy on 400K+ documents with MLflow-based experiment tracking and automated model versioning. Implemented production-ready MLOps pipeline with automated data preprocessing, model checkpointing, and performance monitoring, processing 20K documents/epoch and achieving 98.57% training accuracy. Developed and optimized a multi-label classification model using cutting-edge ViT architecture achieving 95% reduction in document processing time, while maintaining high accuracy across 5 distinct document categories in mortgage domain",
             technologies: [
@@ -102,7 +102,7 @@ export const aboutMe: AboutMeData = {
             github: "https://github.com/PhaneeChowdary/Image-Captioning-Using-InceptionResNetV2",
         },
         {
-            name: "Pubg Player analysis and Rank Prediction",
+            name: "Pubg Player analysis & Rank Prediction",
             description:
                 "Applied advanced data cleaning techniques and optimized dataset memory by 65.5% (983.90 MB to 339.28 MB) while maintaining data integrity and eliminating fraudulent gameplay data. Engineered 15+ game-specific features including normalized kill ratios, movement patterns, and team dynamics to capture comprehensive player performance metrics. Implemented Random Forest Regressor with feature importance analysis, achieving 0.0488 MAE for player ranking prediction while identifying key performance indicators",
             technologies: [

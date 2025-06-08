@@ -8,10 +8,13 @@ import {
     faSquareXTwitter,
     faHashnode,
 } from "@fortawesome/free-brands-svg-icons";
+import { faMeteor, faStar } from "@fortawesome/free-solid-svg-icons";
+import { useStarEffect } from "../context/StarEffectContext";
 
 const Header = () => {
     const router = useRouter();
     const { pathname } = router;
+    const { isStarEffectEnabled, toggleStarEffect } = useStarEffect();
 
     // Helper function to handle basePath for GitHub Pages
     const getImagePath = (path: string) => {
@@ -58,6 +61,19 @@ const Header = () => {
                 >
                     <FontAwesomeIcon icon={faHashnode} />
                 </a>
+                <button
+                    onClick={toggleStarEffect}
+                    className={`transition-colors duration-200 ${
+                        isStarEffectEnabled ? "text-gray-500" : "text-dark"
+                    }`}
+                    title={
+                        isStarEffectEnabled
+                            ? "Disable star effect"
+                            : "Enable star effect"
+                    }
+                >
+                    <FontAwesomeIcon icon={faMeteor} />
+                </button>
             </div>
             <hr className="my-6" />
             <nav className="flex flex-wrap gap-2">

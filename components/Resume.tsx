@@ -46,7 +46,7 @@ const Resume = () => {
                                 key={index}
                                 className="border-b border-gray-200 pb-6"
                             >
-                                <h3 className="text-xl font-semibold">
+                                <h3 className="text-lg font-semibold">
                                     {exp.role}
                                 </h3>
                                 <p className="text-gray-600">{exp.company}</p>
@@ -70,7 +70,7 @@ const Resume = () => {
                                 key={index}
                                 className="border-b border-gray-200 pb-6"
                             >
-                                <h3 className="text-xl font-semibold">
+                                <h3 className="text-lg font-semibold">
                                     {project.name}
                                     {project.github && (
                                         <a
@@ -90,7 +90,7 @@ const Resume = () => {
                                     {project.technologies.map((tech, i) => (
                                         <span
                                             key={i}
-                                            className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm"
+                                            className="px-2 py-1 bg-gray-100 text-gray-800 rounded-lg text-sm"
                                         >
                                             {tech}
                                         </span>
