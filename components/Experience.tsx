@@ -37,20 +37,30 @@ const Experience = () => {
                 <div className="border-l-2 absolute h-full"></div>
                 {experiences.map((experience, index) => (
                     <div key={index} className="ml-6 mb-8 relative">
-                        <div className="absolute -left-11 top-2 bottom-2 -translate-y-3/2 w-10 h-10 rounded-full overflow-hidden border border-gray-500 flex items-center justify-center">
+                        <div
+                            className={`absolute -left-11 top-2 bottom-2 -translate-y-3/2 w-10 h-10 rounded-full overflow-hidden border ${
+                                experience.present
+                                    ? "border-black bg-white"
+                                    : "border-gray-300 bg-gray-100"
+                            } flex items-center justify-center`}
+                        >
                             <Image
                                 src={experience.logo}
                                 alt={`${experience.company} logo`}
                                 width={32}
                                 height={32}
-                                className="w-full h-full object-contain"
+                                className={`w-full h-full object-contain ${
+                                    experience.present
+                                        ? "opacity-100"
+                                        : "opacity-50"
+                                }`}
                             />
                         </div>
                         <div className="ml-3">
                             <h3 className="text-xl">
                                 {experience.title}{" "}
                                 {experience.present && (
-                                    <span className="text-gray-500 text-xs uppercase px-1 rounded-full border border-gray-600">
+                                    <span className="text-white text-xs uppercase px-2 py-0.5 bg-black rounded-full">
                                         Present
                                     </span>
                                 )}

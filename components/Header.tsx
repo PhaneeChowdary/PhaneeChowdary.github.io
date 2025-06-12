@@ -31,7 +31,7 @@ const Header = () => {
                 />
             </Link>
             <h1 className="text-2xl mt-2">Phaneendra Babu Gunturu</h1>
-            <p className="text-gray-600">Machine Learning Research Assistant</p>
+            <p className="text-gray-700">Machine Learning Research Assistant</p>
             <div className="flex space-x-5 mt-4 text-2xl">
                 <a
                     href="https://github.com/PhaneeChowdary"
@@ -82,7 +82,7 @@ const Header = () => {
                         className={`py-1 px-2 rounded-lg ${
                             pathname === "/"
                                 ? "bg-black text-white"
-                                : "text-gray-600"
+                                : "text-gray-700"
                         }`}
                     >
                         About
@@ -93,7 +93,7 @@ const Header = () => {
                         className={`py-1 px-2 rounded-lg ${
                             pathname === "/projects"
                                 ? "bg-black text-white"
-                                : "text-gray-600"
+                                : "text-gray-700"
                         }`}
                     >
                         Projects
@@ -104,7 +104,7 @@ const Header = () => {
                         className={`py-1 px-2 rounded-lg ${
                             pathname === "/skills"
                                 ? "bg-black text-white"
-                                : "text-gray-600"
+                                : "text-gray-700"
                         }`}
                     >
                         Skills
@@ -115,7 +115,7 @@ const Header = () => {
                         className={`py-1 px-2 rounded-lg ${
                             pathname === "/blogs"
                                 ? "bg-black text-white"
-                                : "text-gray-600"
+                                : "text-gray-700"
                         }`}
                     >
                         Blogs
@@ -126,7 +126,7 @@ const Header = () => {
                         className={`py-1 px-2 rounded-lg ${
                             pathname === "/resume"
                                 ? "bg-black text-white"
-                                : "text-gray-600"
+                                : "text-gray-700"
                         }`}
                     >
                         Resume
@@ -137,7 +137,7 @@ const Header = () => {
                         className={`py-1 px-2 rounded-lg ${
                             pathname === "/contact"
                                 ? "bg-black text-white"
-                                : "text-gray-600"
+                                : "text-gray-700"
                         }`}
                     >
                         Contact

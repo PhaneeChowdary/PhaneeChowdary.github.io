@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { projects } from "../utils/projects"; 
+import { projects } from "../utils/projects";
 
 const Projects = () => {
     return (
@@ -10,7 +10,12 @@ const Projects = () => {
             </Head>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 {projects.map((project) => (
-                    <a href={project.link} key={project.id} target="_blank" rel="noreferrer">
+                    <a
+                        href={project.link}
+                        key={project.id}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <div className="rounded-lg flex flex-col p-4 transform transition-transform duration-300 hover:-translate-y-1">
                             <img
                                 src={project.image}

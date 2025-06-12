@@ -10,7 +10,7 @@ const About = () => {
             <Head>
                 <title>Phaneendra Babu Gunturu</title>
             </Head>
-            <p className="text-lg text-gray-600 relative z-10">
+            <p className="text-lg relative z-10">
                 I'm a passionate <strong>Computer Science</strong> graduate{" "}
                 student at{" "}
                 <strong>
