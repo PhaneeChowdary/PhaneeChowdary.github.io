@@ -46,7 +46,7 @@ const AnimatedStars = () => {
                 } else {
                     this.baseSize = Math.random() * 0.8 + 1.0; // Large stars (10%): 0.8-1.0
                 }
-                this.baseSpeed = Math.random() * 2 + 0.5;
+                this.baseSpeed = Math.random();
                 this.speed = this.baseSpeed;
                 this.opacity = Math.random() * 0.5 + 0.5;
                 this.waveOffset = Math.random();
@@ -61,7 +61,7 @@ const AnimatedStars = () => {
                     this.z = 1500;
                     this.x = canvas!.width + Math.random() * 100;
                     this.y = Math.random() * canvas!.height;
-                    this.baseSpeed = Math.random() * 2 + 0.5;
+                    this.baseSpeed = Math.random();
                     this.speed = this.baseSpeed;
                     this.waveOffset = Math.random();
                 }
