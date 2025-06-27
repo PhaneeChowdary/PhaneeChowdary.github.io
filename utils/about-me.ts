@@ -31,7 +31,7 @@ export const aboutMe: AboutMeData = {
     name: "Phaneendra Babu Gunturu",
     role: "Deep Learning Researcher",
     education: [
-        "Masters in Computer Science, Purdue University, USA, 2025",
+        "Masters in Computer Science, Purdue University Indianapolis (formerly IUPUI), USA, 2025",
         "Bharath Institute of Higher Education & Research, India, 2023",
     ],
     skills: [
@@ -45,10 +45,19 @@ export const aboutMe: AboutMeData = {
         "Scikit-learn",
         "Keras",
         "OpenCV",
+        "Django",
+        "Flask",
+        "MongoDB",
         "SQL",
         "Git",
     ],
     experience: [
+        {
+            company: "Indiana University School of Medicine, USA",
+            role: "Research Assistant",
+            period: "July 2025 - Present",
+            description:"Working as a Research assistant building Graph Neural networks for large-scale electronic health records (EHR) data. Developing and optimizing GNN architectures for improved accuracy and efficiency, leveraging PyTorch and TensorFlow. Collaborating with a multidisciplinary team to design and implement novel solutions for healthcare applications.",
+        },
         {
             company: "Indiana University Indianapolis, USA",
             role: "Deep Learning Researcher",

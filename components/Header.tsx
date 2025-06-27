@@ -31,7 +31,7 @@ const Header = () => {
                 />
             </Link>
             <h1 className="text-2xl mt-2">Phaneendra Babu Gunturu</h1>
-            <p className="text-gray-700">Machine Learning Research Assistant</p>
+            <p className="text-gray-700">AI/ML Research Assistant</p>
             <div className="flex space-x-5 mt-4 text-2xl">
                 <a
                     href="https://github.com/PhaneeChowdary"

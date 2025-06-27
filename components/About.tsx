@@ -14,8 +14,8 @@ const About = () => {
                 I'm a passionate <strong>Computer Science</strong> graduate{" "}
                 student at{" "}
                 <strong>
-                    <a href="https://www.purdue.edu">Purdue University</a>
-                </strong>{" "}
+                    <a href="https://www.purdue.edu">Purdue University Indianapolis</a>
+                </strong>{" "} (formerly IUPUI)
                 with a strong focus on Artificial Intelligence and Machine
                 Learning. I enjoy the challenge of turning complex problems into
                 robust, data-driven solutions. I'm always excited to explore

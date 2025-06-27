@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const Experience = () => {
     const experiences = [
-        // {
-        //     title: "Research Assistant",
-        //     company: "Indiana University School of Medicine",
-        //     period: "June 2025",
-        //     present: true,
-        //     logo: "/company-logos/IU.svg.png",
-        // },
+        {
+            title: "Research Assistant",
+            company: "Indiana University School of Medicine",
+            period: "July 2025",
+            present: true,
+            logo: "/company-logos/IU.svg.png",
+        },
         {
             title: "Deep Learning Researcher",
             company: "UbiEi Lab, Indiana University",
